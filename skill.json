@@ -1,0 +1,37 @@
+{
+  "name": "genpark-mistral-model-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Mistral AI-inspired intelligent model router across Mistral model family.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "mistral",
+    "model-routing",
+    "inference",
+    "sovereign-ai"
+  ],
+  "inputs": {
+    "task_type": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "deployment": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "selected_model": {
+      "type": "string"
+    },
+    "response": {
+      "type": "string"
+    },
+    "cost_per_1m_tokens": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
